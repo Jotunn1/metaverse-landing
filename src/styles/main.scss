@@ -1,0 +1,17 @@
+@import './reset.scss', './--css.scss', './--scss.scss', './font-mixins.scss', './mixins.scss', './layouts.scss';
+
+body {
+    background: $bg-color ;
+}
+
+.text-t1 {
+    @include text-t1();
+}
+
+.text-t2 {
+    @include text-t2();
+}
+
+.title-h1 {
+    @include title-h1();
+}

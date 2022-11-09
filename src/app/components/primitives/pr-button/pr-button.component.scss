@@ -1,0 +1,17 @@
+:host {
+    display: block;
+
+    * {
+        cursor: pointer;
+    }
+
+    button {
+        padding: 16px 24px;
+        background: var(--button-color);
+        border-radius: 6px;
+        // background: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,27 @@
+$ease-out-apple1: cubic-bezier(0.165, 0.84, 0.44, 1);
+$base-time: 0.3s;
+@mixin transition(
+  $property: all,
+  $duration: $base-time,
+  $delay: 0s,
+  $timing-function: $ease-out-apple1
+  // $timing-function: $smooth-glyph1
+) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+  transition-delay: $delay;
+}
+@mixin position(
+  $position: null,
+  $top: null,
+  $right: null,
+  $bottom: null,
+  $left: null
+) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}

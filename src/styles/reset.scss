@@ -1,0 +1,130 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	border: 0;
+	outline: none;
+	background: none;
+}
+
+body {
+	min-height: 100%;
+}
+
+::-webkit-scrollbar {
+	height: 0;
+	width: 0;
+	-webkit-appearance: none;
+}
+
+:hover,
+:focus,
+:active {
+	outline: none;
+	text-decoration: none;
+	// border-style: none;
+}
+
+/* Hide Play button + controls on iOS */
+video::-webkit-media-controls {
+	display: none !important;
+}
+
+img,
+video,
+svg {
+	user-select: none;
+}
+
+img {
+	box-sizing: border-box;
+}
+
+ul {
+	padding: 0;
+}
+
+input,
+textarea,
+fieldset {
+	border: 0;
+	outline: none;
+	resize: none;
+	-ms-overflow-style: none;
+
+	&:-webkit-autofill,
+	&:-webkit-autofill:hover,
+	&:-webkit-autofill:focus,
+	&:-webkit-autofill:active {
+		-webkit-text-fill-color: var(--color-B0);
+		background-color: var(--color-W0-a) !important;
+		transition: background-color 5000s;
+	}
+}
+
+a,
+b,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+span{
+	cursor: auto;
+	text-rendering: optimizeLegibility;
+}
+
+input,
+textarea,
+div,
+li,
+ol,
+a,
+b,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+span {
+	font-feature-settings: "ss03"on, "ss04"on;
+}
+
+a,
+li,
+ul,
+span,
+div {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a,
+a:visited,
+a:focus,
+a:active,
+a:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+li {
+	list-style-type: none;
+}
+
+button {
+	background: transparent;
+	border: none;
+	outline: none;
+}

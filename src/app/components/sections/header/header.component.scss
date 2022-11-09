@@ -1,0 +1,23 @@
+@import '/src/styles/mixins.scss';
+
+:host {
+    padding: var(--spacing4) var(--spacing7) var(--spacing4) var(--spacing4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    >nav {
+        display: flex;
+        grid-gap: var(--spacing4);
+
+        li {
+            opacity: 0.7;
+            cursor: pointer;
+            @include transition(opacity);
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
