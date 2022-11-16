@@ -2,7 +2,7 @@
 
 :host {
     display: block;
-    height: 150vh;
+    min-height: 150vh;
     position: relative;
 
     .bg-image {
@@ -12,18 +12,6 @@
         >img {
             @include position(absolute, -25%, 0, 0, 0);
             width: 100%;
-        }
-    }
-
-    >.title-pair {
-        margin-top: var(--spacing8);
-
-        >* {
-            text-align: center;
-        }
-
-        >h5 {
-            text-transform: uppercase;
         }
     }
 

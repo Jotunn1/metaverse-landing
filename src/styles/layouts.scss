@@ -4,7 +4,7 @@ app-about-us {
 
     .content {
         position: relative;
-        max-width: 575px;
+        max-width: 650px;
 
         &:before {
             display: block;
@@ -33,7 +33,19 @@ app-about-us {
     }
 }
 
-.container{
+.container {
     max-width: var(--column12);
     margin: auto;
+}
+
+.title-pair {
+    margin-top: var(--spacing8);
+
+    >* {
+        text-align: center;
+    }
+
+    >h5 {
+        text-transform: uppercase;
+    }
 }

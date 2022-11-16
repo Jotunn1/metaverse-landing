@@ -1,1 +1,7 @@
-<p>our-brands works!</p>
+<div class="title-pair">
+    <h5 class="text-t1">No problem</h5>
+    <h2 class="title-h1">Our brands</h2>
+</div>
+<div class="container">
+    <app-brand-card *ngFor="let card of brandsList" [brandCardInfo]="card"></app-brand-card>
+</div>

@@ -1,11 +1,13 @@
-
-    <div class="title-pair">
-        <h5 class="text-t1">Our Way</h5>
-        <h2 class="title-h1">Roadmap</h2>
-    </div>
-    <div class="container">
-        <app-pr-title-w-list *ngFor="let roadMapUnit of roadMapContent " [content]="roadMapUnit"></app-pr-title-w-list>
-    </div>
+<div class="title-pair">
+  <h5 class="text-t1">Our Way</h5>
+  <h2 class="title-h1">Roadmap</h2>
+</div>
+<div class="container">
+  <app-pr-title-w-list
+    *ngFor="let roadMapUnit of roadMapContent"
+    [content]="roadMapUnit"
+  ></app-pr-title-w-list>
+</div>
 <div class="bg-image">
-    <img src="assets/road-map.png" alt="">
+  <img src="assets/road-map.png" alt="" />
 </div>
