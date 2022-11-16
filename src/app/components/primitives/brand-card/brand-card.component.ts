@@ -1,4 +1,4 @@
-import { Component, Input, OnInit,HostBinding } from '@angular/core';
+import { Component, Input, OnInit, HostBinding } from '@angular/core';
 import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
 
 @Component({
@@ -19,9 +19,18 @@ export class BrandCardComponent implements OnInit {
     );
   }
 
-  constructor(private domSanitizer:DomSanitizer) {}
+  @HostBinding('class') cardClass: string = '';
+
+  constructor(private domSanitizer: DomSanitizer) {}
 
   ngOnInit(): void {
     console.log(this.brandCardInfo);
+    this.cardClass = this.setBrandCardClass(this.brandCardInfo.title);
+  }
+
+  setBrandCardClass(title: string): string {
+    if (title.toLowerCase().includes('game')) return 'game';
+    else if (title.toLowerCase().includes('ecosystem')) return 'ecosystem';
+    return 'sankofa';
   }
 }
