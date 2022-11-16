@@ -15,3 +15,6 @@ body {
 .title-h1 {
     @include title-h1();
 }
+.title-h2{
+    @include title-h2();
+}

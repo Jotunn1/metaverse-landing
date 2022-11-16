@@ -1,0 +1,28 @@
+@import '/src/styles/mixins.scss';
+
+:host {
+    display: block;
+    max-width: 450px;
+
+    >h3 {
+        margin-bottom: var(--spacing3);
+    }
+
+    >ul {
+        >li {
+            position: relative;
+
+            &:before {
+                content: url('/assets/list-pointer.svg');
+                display: block;
+                // align-items: center;
+                @include position(absolute, 50%, unset, unset, -36px);
+                transform: translateY(-50%);
+            }
+
+            &:not(:last-of-type) {
+                margin-bottom: var(--spacing1);
+            }
+        }
+    }
+}

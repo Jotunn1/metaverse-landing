@@ -1,0 +1,42 @@
+@import '/src/styles/mixins.scss';
+
+:host{
+    display: block;
+    position: relative;
+    height:calc(100vh - var(--spacing9)) ;
+
+    .bg-image {
+        @include position(absolute, 0, 0, 0, 0);
+        z-index: -1;
+
+        >img {
+            @include position(absolute, 0, 0, 0, 0);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    >.content{
+        max-width: 545px;
+
+        >p{
+            opacity: 0.8;
+        }
+    }
+
+    // .gradient{
+    //     @include position(absolute,0,0,0,0);
+    //     background: linear-gradient(180deg, rgba(24,3,43,1) 0%, rgba(11,9,75,1) 100%);
+    //     height: 40px;
+    //     filter: opacity(0.3);
+    //     &-top{
+    //         top: 0;
+    //         transform: translateY(-50%);
+    //     }
+    //     &-bottom{
+    //         top: unset;
+    //         bottom: 0;
+    //         transform: translateY(50%);
+    //     }
+    // }
+}

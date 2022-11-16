@@ -1,0 +1,44 @@
+@import '/src/styles/mixins.scss';
+
+:host {
+    display: block;
+    height: 150vh;
+    position: relative;
+
+    .bg-image {
+        @include position(absolute, 0, 0, 0, 0);
+        z-index: -1;
+
+        >img {
+            @include position(absolute, -25%, 0, 0, 0);
+            width: 100%;
+        }
+    }
+
+    >.title-pair {
+        margin-top: var(--spacing8);
+
+        >* {
+            text-align: center;
+        }
+
+        >h5 {
+            text-transform: uppercase;
+        }
+    }
+
+    >.container {
+        display: flex;
+        flex-direction: column;
+
+        >app-pr-title-w-list {
+            width: 50%;
+            padding-top: var(--spacing8);
+
+            &:nth-of-type(even) {
+                align-self: flex-end;
+            }
+        }
+    }
+
+}

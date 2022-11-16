@@ -7,6 +7,10 @@ import { FooterComponent } from './components/sections/footer/footer.component';
 import { FirstScreenComponent } from './components/sections/first-screen/first-screen.component';
 import { HeaderComponent } from './components/sections/header/header.component';
 import { PrButtonComponent } from './components/primitives/pr-button/pr-button.component';
+import { AboutUsComponent } from './components/sections/about-us/about-us.component';
+import { RoadMapComponent } from './components/sections/road-map/road-map.component';
+import { OurBrandsComponent } from './components/sections/our-brands/our-brands.component';
+import { PrTitleWListComponent } from './components/primitives/pr-title-w-list/pr-title-w-list.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { PrButtonComponent } from './components/primitives/pr-button/pr-button.c
     HeaderComponent,
     FooterComponent,
     FirstScreenComponent,
-    PrButtonComponent
+    PrButtonComponent,
+    AboutUsComponent,
+    RoadMapComponent,
+    OurBrandsComponent,
+    PrTitleWListComponent
   ],
   imports: [
     BrowserModule
