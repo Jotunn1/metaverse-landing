@@ -9,12 +9,11 @@
     }
 
     &:hover {
-        >.illustration>.image>svg {
-            animation: svg-rotate 5s linear infinite;
+        >.illustration>.image>.abstraction {
+            transform: scale(1.1);
+            // animation: abstraction-scale 1s ease-in forwards;
         }
     }
-
-    // justify-content: center;
 
     >.illustration {
         display: flex;
@@ -24,9 +23,10 @@
             position: relative;
             overflow: hidden;
 
-            >svg {
-                @include position(absolute, 10%, 0, 0, -40%);
-                // transform: translateX(-50%);
+            >.abstraction {
+                transform: scale(1);
+                @include position(absolute, 10%, 0, 0, 12px);
+                @include transition(transform, 1s, ease-in);
             }
         }
 
@@ -57,13 +57,13 @@
         }
     }
 
-    @keyframes svg-rotate {
+    @keyframes abstraction-scale {
         0% {
-            transform: rotate(0);
+            transform: scale(1);
         }
 
         100% {
-            transform: rotate(360deg);
+            transform: scale(1.1);
         }
     }
 }

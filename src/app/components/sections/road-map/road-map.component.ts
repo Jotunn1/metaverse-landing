@@ -28,8 +28,8 @@ export class RoadMapComponent implements OnInit {
         'CEX Listings and Marketing',
         'Governance Token Launch on SOL ($CMETA)',
         'Bridge BSC, ETH Smart Contracts to Solana Contract',
-        // '10K Telegram Members',
-        // '10K Twitter Followers'
+        '10K Telegram Members',
+        '10K Twitter Followers'
       ],
     },
     {

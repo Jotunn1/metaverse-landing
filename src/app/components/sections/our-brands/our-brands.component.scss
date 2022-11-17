@@ -1,7 +1,19 @@
 :host {
+    display: block;
+    background: repeating-linear-gradient(to bottom,
+            transparent,
+            transparent,
+            rgba(256,256,256,0.1),
+            transparent);
+    background-size: 100% 80px;
+
     >.container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: var(--spacing5);
+    }
+
+    >.title-pair {
+        margin-bottom: var(--spacing6);
     }
 }

@@ -7,7 +7,9 @@ import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
   styleUrls: ['./brand-card.component.scss'],
 })
 export class BrandCardComponent implements OnInit {
-  @Input() brandCardInfo: { title: string; color: string; text: string } = {
+  svgPath:string = 'assets/svg-map.svg#';
+  @Input() brandCardInfo: {type:string, title: string; color: string; text: string } = {
+    type: '',
     title: '',
     color: '',
     text: '',
@@ -26,6 +28,7 @@ export class BrandCardComponent implements OnInit {
   ngOnInit(): void {
     console.log(this.brandCardInfo);
     this.cardClass = this.setBrandCardClass(this.brandCardInfo.title);
+    console.log(this.cardClass);
   }
 
   setBrandCardClass(title: string): string {
