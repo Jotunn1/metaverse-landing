@@ -6,6 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./pr-title-w-list.component.scss']
 })
 export class PrTitleWListComponent implements OnInit {
+  @Input() index: number = 0;
   @Input() content: { count: string; title: string; listItems: any[] } = { count: '', title: '', listItems: [] };
   constructor() { }
 

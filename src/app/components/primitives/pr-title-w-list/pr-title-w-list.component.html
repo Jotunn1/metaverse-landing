@@ -3,6 +3,9 @@
     <br>
     {{content.title}}
 </h3>
+<div class="circle">
+    <img [attr.src]="'assets/roadmap/' + index + '.png'" alt="circle">
+</div>
 <ul>
     <li *ngFor="let listItem of content.listItems" class="text-t3">
         {{listItem}}

@@ -3,6 +3,7 @@
 :host {
     display: block;
     max-width: 450px;
+    position: relative;
 
     >h3 {
         margin-bottom: var(--spacing3);
@@ -24,5 +25,9 @@
                 margin-bottom: var(--spacing1);
             }
         }
+    }
+
+    >.circle {
+        @include position(absolute, 0, 0, 0, 0);
     }
 }

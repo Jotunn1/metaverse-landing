@@ -4,7 +4,8 @@
 </div>
 <div class="container">
   <app-pr-title-w-list
-    *ngFor="let roadMapUnit of roadMapContent"
+    *ngFor="let roadMapUnit of roadMapContent;let i = index"
     [content]="roadMapUnit"
+    [index]="i + 1"
   ></app-pr-title-w-list>
 </div>
