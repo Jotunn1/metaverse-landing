@@ -28,6 +28,23 @@
     }
 
     >.circle {
-        @include position(absolute, 0, 0, 0, 0);
+
+        @include position(absolute, unset, unset, unset, unset);
+        z-index: -1;
+
+        &.even {
+            top: -18%;
+            left: 36%;
+        }
+
+        &.odd {
+            top: -27%;
+            left: -96%;
+        }
+
+        &.last{
+            top: -29%;
+            left: -108%
+        }
     }
 }

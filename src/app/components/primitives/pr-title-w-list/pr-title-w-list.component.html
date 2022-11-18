@@ -1,13 +1,13 @@
 <h3 class="title-h2">
-    {{content.count}}
-    <br>
-    {{content.title}}
+  {{ content.count }}
+  <br />
+  {{ content.title }}
 </h3>
-<div class="circle">
-    <img [attr.src]="'assets/roadmap/' + index + '.png'" alt="circle">
+<div class="circle" [ngClass]="[index % 2 ? 'odd' :  'even', index ===3? 'last': '']">
+  <img [attr.src]="'assets/roadmap/' + index + '.png'" alt="circle" />
 </div>
 <ul>
-    <li *ngFor="let listItem of content.listItems" class="text-t3">
-        {{listItem}}
-    </li>
+  <li *ngFor="let listItem of content.listItems" class="text-t3">
+    {{ listItem }}
+  </li>
 </ul>
