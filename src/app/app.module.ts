@@ -12,6 +12,8 @@ import { RoadMapComponent } from './components/sections/road-map/road-map.compon
 import { OurBrandsComponent } from './components/sections/our-brands/our-brands.component';
 import { PrTitleWListComponent } from './components/primitives/pr-title-w-list/pr-title-w-list.component';
 import { BrandCardComponent } from './components/primitives/brand-card/brand-card.component';
+import { OurResourcesComponent } from './components/sections/our-resources/our-resources.component';
+import { GameComponent } from './components/sections/game/game.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { BrandCardComponent } from './components/primitives/brand-card/brand-car
     RoadMapComponent,
     OurBrandsComponent,
     PrTitleWListComponent,
-    BrandCardComponent
+    BrandCardComponent,
+    OurResourcesComponent,
+    GameComponent
   ],
   imports: [
     BrowserModule
