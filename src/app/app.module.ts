@@ -14,6 +14,7 @@ import { PrTitleWListComponent } from './components/primitives/pr-title-w-list/p
 import { BrandCardComponent } from './components/primitives/brand-card/brand-card.component';
 import { OurResourcesComponent } from './components/sections/our-resources/our-resources.component';
 import { GameComponent } from './components/sections/game/game.component';
+import { PrCircleWTextComponent } from './components/primitives/pr-circle-w-text/pr-circle-w-text.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { GameComponent } from './components/sections/game/game.component';
     PrTitleWListComponent,
     BrandCardComponent,
     OurResourcesComponent,
-    GameComponent
+    GameComponent,
+    PrCircleWTextComponent
   ],
   imports: [
     BrowserModule

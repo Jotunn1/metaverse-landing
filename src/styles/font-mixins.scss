@@ -28,6 +28,16 @@
     opacity: 0.8;
 }
 
+@mixin text-t4 {
+    //TODO connect Gillroy after
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: rgba(255, 255, 255, 0.7);
+}
+
 
 @mixin title-h1 {
     font-family: 'Assistant', sans-serif;

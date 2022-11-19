@@ -16,12 +16,18 @@ body {
     @include text-t3();
 }
 
+.text-t4 {
+    @include text-t4();
+}
+
 .title-h1 {
     @include title-h1();
 }
-.title-h2{
+
+.title-h2 {
     @include title-h2();
 }
-.title-h3{
+
+.title-h3 {
     @include title-h3();
 }

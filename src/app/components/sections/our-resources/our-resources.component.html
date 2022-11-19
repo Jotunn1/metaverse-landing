@@ -4,16 +4,23 @@
 </div>
 <div class="container">
   <div class="text">
-    <img src="assets/logo.svg" alt="">
+    <img src="assets/logo.svg" alt="" />
     <h2 class="title-h3">About toKen $Cmeta</h2>
     <p class="text-t1">
-      CMETA, a BSC-based cryptocurrency token will be the sole governance token on the platform. This means that every single transaction in the Crafty Metaverse space will be conducted with the $CMETA token
+      CMETA, a BSC-based cryptocurrency token will be the sole governance token
+      on the platform. This means that every single transaction in the Crafty
+      Metaverse space will be conducted with the $CMETA token
     </p>
     <app-pr-button [btnText]="'Play (Coming Soon)'"></app-pr-button>
   </div>
   <div class="illustration">
+    <ul>
+      <app-pr-circle-w-text
+        *ngFor="let item of resourcesList" [inputData]="item"
+      ></app-pr-circle-w-text>
+    </ul>
     <div class="image-wrapper">
-        <img src="assets/resources/gradient-logo.png" alt="gradient-logo" />
+      <img src="assets/resources/gradient-logo.png" alt="gradient-logo" />
     </div>
   </div>
 </div>
